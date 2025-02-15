@@ -1,0 +1,40 @@
+.sidebar{
+    min-width:300px;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: calc(100vh - 150px);
+    border-bottom-left-radius: 35px;
+    a{
+        color: $grey;
+        font-size: 18px;
+        font-family: "Poppins", serif;
+        padding: 12px 0;
+        font-weight: 500;
+        padding-left: 25px;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 100%;
+
+        }
+        span{
+            display: inline-block;
+            margin-left: 15px;
+        }
+        &.active{
+            background-color: #fff;
+            color: #000;
+            svg path{
+                fill: $violet;
+            }
+            &::after{
+                background-color:$violet; ;
+            }
+        }
+    }
+}
