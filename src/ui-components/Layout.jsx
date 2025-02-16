@@ -9,7 +9,7 @@ function Layout({children}) {
             <Header/>
         <div className="flex">
         <Sidebar/>
-        <div className="layout-container">
+        <div className="layout-container p-[25px]">
             {children}
         </div>
         </div>

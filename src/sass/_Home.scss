@@ -1,0 +1,43 @@
+%span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 25px;
+}
+.credit-card{
+    position: relative;
+    overflow: hidden;
+    >div{
+        position: relative;
+        z-index: 999;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: -31px;
+        left: -1px;
+        width: 200px;
+        height: 200px;
+        background-color: #5C5C5C;
+        clip-path: polygon( 100% 0.395%,100% 0.395%,96.697% 19.674%,92.451% 36.324%,87.06% 50.556%,80.323% 62.577%,72.04% 72.597%,62.008% 80.825%,50.028% 87.47%,35.896% 92.742%,19.413% 96.849%,0.377% 100%,0.377% 20.158%,0.377% 20.158%,0.624% 16.952%,1.339% 13.912%,2.483% 11.076%,4.018% 8.486%,5.904% 6.184%,8.102% 4.208%,10.574% 2.601%,13.282% 1.403%,16.185% 0.654%,19.245% 0.395%,100% 0.395% );
+    }
+    &__lineone{
+       @extend %span;
+        background: linear-gradient(180deg, #AC66F9 0%, #7266FA 100%);
+        transform: rotate(-32deg) translate(50px, -2px);
+    }
+    &__linetwo{
+        @extend %span;
+        background: linear-gradient(180deg, #AC66F9 0%, #7266FA 100%);
+        transform: rotate(-32deg) translate(50px, -2px);
+        height: 40px;
+        bottom: -58px;
+    }
+}
+
+
+//background: linear-gradient(180deg, #7266FA 0%, #BA66F9 100%);
+
+
+//background: linear-gradient(180deg, #AC66F9 0%, #7266FA 100%);

@@ -5,10 +5,18 @@ export default {
     extend: {
       colors: {
          "grey":'#F0F0FACC',
+         "grey100":"#999999CC",
          "grey200":'#999999',
-         "violet":"#7266FA"
+          "grey900":"#4B4B4B",
+          "white69":"#ffffffb0",
+
+         "lightviolet":"#F3F3FB",
+         "violet":"#7266FA",
+         "violet100":"#B147F2"
       },
       fontSize:{
+        'size-14':'14px',
+        'size-18':'18px',
         'size-20':'20px',
         'size-14':'14px'
       },

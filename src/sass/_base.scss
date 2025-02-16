@@ -1,3 +1,15 @@
 body{
     background-color: $violet;
 }
+.cntrElement{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input{
+    &:focus{
+        outline: 0 !important;
+        box-shadow: none  !important;
+    }
+}
