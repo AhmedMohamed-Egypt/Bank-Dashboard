@@ -7,7 +7,7 @@ import { useState } from "react"
 
 
 function Home() {
-    const {id,account,status,balance} = useSelector((store)=>store.mainCard)
+    const {id,account,status,balance,initialLoading,editLoading} = useSelector((store)=>store.mainCard)
     const [open,setOpen] = useState(false)
     
     
@@ -23,14 +23,14 @@ function Home() {
                     <button onClick={()=>setOpen(true)} className="text-violet100 font-pop text-size-18">Change</button>
                  </div>
                  <div className="flex items-center justify-between">
-                    <div className="min-w-[250px] pr-[15px]">
+                   {initialLoading || editLoading?<p>Loading</p>: <div className="min-w-[250px] pr-[15px]">
                         <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid">
                             <p className="text-violet font-semibold font-pop w-[100px]">ID</p> <p className="text-black font-pop text-size-18 font-semibold">{id}</p>
                             </div>
                         <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid"><p className="text-violet font-semibold font-pop w-[100px]">Account</p> <p className="text-black font-pop text-size-18 font-semibold">{account}</p></div>
                         <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid"><p className="text-violet font-semibold font-pop w-[100px]">Status</p><p className="text-black font-pop text-size-18 font-semibold">{status}</p></div>
                         <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid"><p className="text-violet font-semibold font-pop w-[100px]">Balance</p><p className="text-black font-pop text-size-18 font-semibold">$ {balance}</p></div>
-                    </div>
+                    </div>}
                     <div className="bg-grey900 credit-card rounded-[10px] pl-[20px] w-[280px] pr-[25px] pt-[15px] pb-[15px]">
                         <span className="credit-card__lineone"></span>
                         <span className="credit-card__linetwo"></span>

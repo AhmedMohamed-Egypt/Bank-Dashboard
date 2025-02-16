@@ -1,8 +1,10 @@
 {
-    "cards":[{
-        "id":"23456",
-        "account":"45669741",
-        "status":"Premium",
-        "balance":50000
-    }]
+  "cards": [
+    {
+      "account": "Prmium",
+      "status": "in-active",
+      "balance": "45600",
+      "id": "23456"
+    }
+  ]
 }

@@ -3,16 +3,14 @@ import { getData } from "../redux/MainCard"
 import { useDispatch } from "react-redux"
 
 const initialState = {
-    id:'',
+   
     account:'',
     status:'',
     balance:''
 }
 function reducer(snState,action){
     switch(action.type){
-       case 'getId':{
-        return {...snState,id:action.payload}
-       }
+      
        case 'getStatus':{
         return {...snState,status:action.payload}
        }
@@ -35,12 +33,12 @@ function reducer(snState,action){
 
 
 function FormMainCard({className,onClick,setOpen}) {
-    const [{id,account,status,balance},dispatch] = useReducer(reducer,initialState)
+    const [{account,status,balance},dispatch] = useReducer(reducer,initialState)
     const dispatchRedux = useDispatch()
     function handleSaveChanges(e){
     e.preventDefault()
     const data = {
-        id:id,
+        
         account:account,
         status:status,
         balance:balance
@@ -52,10 +50,7 @@ function FormMainCard({className,onClick,setOpen}) {
     return (
         <div className={className} onClick={(e)=>e.stopPropagation()}>
             <form action="" className="bg-[#fff] p-[20px]  w-[400px] rounded-[8px]">
-                <div className="mb-3">
-                    <label htmlFor="id" className="text-[#333333f2] block text-grey900  font-semibold mb-1">ID</label>
-                    <input value={id} onChange={(e)=>dispatch({type:'getId',payload:e.target.value})} id="id" type="text" className="bg-[#f3f4f6] w-full px-[15px] py-[10px] rounded-[4px]" />
-                </div>
+               
                 <div className="mb-3">
                     <label htmlFor="account" className="text-[#333333f2] font-semibold  mb-1 block">Account</label>
                     <input value={account} onChange={(e)=>dispatch({type:'getAccount',payload:e.target.value})}  id="account" type="text" className="bg-[#f3f4f6]  w-full px-[15px] py-[8px] rounded-[4px]" />
