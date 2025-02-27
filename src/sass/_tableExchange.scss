@@ -1,0 +1,55 @@
+.table-exchange{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    table{
+        min-width: auto;
+        tbody{
+            tr{
+                border-bottom: 1px solid #999999CC;
+            }
+        }
+    }
+    .th-currency{
+        font-family: "Poppins", serif !important;
+        font-weight: 500 !important;
+        font-size: 18px !important;
+        padding-left: 0;
+        padding-bottom: 5px;
+        border-bottom: 0;
+        position: relative;
+        padding-right: 0;
+        &::after{
+            content: "";
+            position: absolute;
+            top: auto;
+            right: 0;
+            height: 50%;
+            width: 2px;
+            background-color: rgba(153, 153, 153, 0.8);
+            bottom: 5px;
+           
+        }
+    }
+    .thead-exchnage{
+        tr{
+            th{
+                color:#999999;
+                font-family: "Poppins", serif !important;
+                font-weight: 500 !important;
+                font-size: 12px;
+                padding-bottom: 5px;
+                border-bottom: 0;
+                padding-left: 30px;
+
+            }
+        }
+    }
+    .table-td{
+        padding-bottom: 5px;
+        font-family: "Poppins", serif !important;
+        font-weight: 500 !important;
+        font-size: 16px;
+        border-bottom: 0;
+        padding-left: 30px;
+    }
+}

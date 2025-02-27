@@ -1,6 +1,11 @@
 body{
     background-color: $violet;
 }
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1720px;
+    }
+}
 .cntrElement{
     position: absolute;
     top: 50%;

@@ -4,7 +4,7 @@ const BalanceContext = createContext();
 
 const initialState = {
     balance : 5000,
-    defaultCurrency:'$'
+    defaultCurrency:'EUR'
 }
 function reducer(snState,action){
     switch (action.type){

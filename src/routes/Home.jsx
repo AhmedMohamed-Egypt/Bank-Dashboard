@@ -4,10 +4,11 @@ import Layout from "../ui-components/Layout"
 import Overlay from "../ui-components/Overlay"
 import FormMainCard from "../ui-components/FormMainCard"
 import { useState } from "react"
-
-
+import ExchangeRate from "../components/ExchangeRate"
+import { UseBalance } from "../context/BalanceContext"
 function Home() {
     const {id,account,status,balance,initialLoading,editLoading} = useSelector((store)=>store.mainCard)
+    const {defaultCurrency} = UseBalance()
     const [open,setOpen] = useState(false)
     
     
@@ -16,7 +17,7 @@ function Home() {
             {open&&<Overlay onClick={()=>setOpen(false)}>
                <FormMainCard setOpen={setOpen} onClick={()=>setOpen(false)} className={'cntrElement'}/>
             </Overlay>}
-            <div>
+            <div className="flex  ">
                 <div className="mainCard bg-lightviolet rounded-[10px] w-[620px] p-[20px] ">
                  <div className="flex items-center justify-between mb-[20px]">
                     <p className="text-black font-pop font-semibold">Main Card</p>
@@ -29,7 +30,7 @@ function Home() {
                             </div>
                         <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid"><p className="text-violet font-semibold font-pop w-[100px]">Account</p> <p className="text-black font-pop text-size-18 font-semibold">{account}</p></div>
                         <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid"><p className="text-violet font-semibold font-pop w-[100px]">Status</p><p className="text-black font-pop text-size-18 font-semibold">{status}</p></div>
-                        <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid"><p className="text-violet font-semibold font-pop w-[100px]">Balance</p><p className="text-black font-pop text-size-18 font-semibold">$ {balance}</p></div>
+                        <div className="py-[10px] flex items-center border-b-[1px] border-grey100 border-solid"><p className="text-violet font-semibold font-pop w-[100px]">Balance</p><p className="text-black font-pop text-size-18 font-semibold">{defaultCurrency} {balance}</p></div>
                     </div>}
                     <div className="bg-grey900 credit-card rounded-[10px] pl-[20px] w-[280px] pr-[25px] pt-[15px] pb-[15px]">
                         <span className="credit-card__lineone"></span>
@@ -58,6 +59,7 @@ function Home() {
                     </div>
                  </div>
                 </div>
+                <ExchangeRate/>
             </div>
         </Layout>
     )
