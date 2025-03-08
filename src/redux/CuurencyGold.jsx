@@ -4,11 +4,14 @@ const initialState = {
   metalValue: "",
   currencies: [],
   metals: [],
-  loadCurrencyGold: false,
+  loadingCG: false,
+  resultData: {},
+  errormetalCurrency: null,
 };
 
 export default function currencyMetalReducer(state = initialState, action) {
   switch (action.type) {
+   
     case "getAllCurrinces": {
       return { ...state, currencies: action.payload };
     }
@@ -23,6 +26,21 @@ export default function currencyMetalReducer(state = initialState, action) {
       const currencyValue = action.payload?.value;
       return { ...state, currencyValue: currencyValue };
     }
+    case "loadingCg": {
+      const error = action.payload?null:state.errormetalCurrency
+
+      return { ...state, loadingCG: action.payload,errormetalCurrency:error };
+    }
+    case "fetchData": {
+      return { ...state, resultData: action.payload };
+    }
+    case "fetchError": {
+      return { ...state, errormetalCurrency: action.payload,resultData:initialState.resultData};
+    }
+    case 'deleteError':{
+     
+  //    return {...state,errormetalCurrency:null,loadingCG:false}
+    }
     default: {
       return state;
     }
@@ -32,29 +50,40 @@ export default function currencyMetalReducer(state = initialState, action) {
 export function fetchGold(curr, metal) {
   return async function (dispatch, getState) {
     try {
+      dispatch({ type: "loadingCg", payload: true });
       const data = await fetch(
-        `https://metals-prices-rates-api.p.rapidapi.com/latest?base=${curr}&symbols=${metal}`,
+        `https://metals.g.apised.com/v1/latest?symbols=${metal}&base_currency=${curr}`,
         {
           method: "GET",
           headers: {
-            "x-rapidapi-key":
-              "13f6d8a0admshacd64ffa57b14cap1a8b1ajsn8c7fab47821d",
-            "x-rapidapi-host": "metals-prices-rates-api.p.rapidapi.com",
+            "x-api-key": "sk_671a2036C9e443cc360A668e4d199e63c71FF8f4c1a9BaeF",
+            method: "GET",
+            redirect: "follow",
           },
         }
       );
+      
 
       if (!data.ok) {
-        throw new Error("Failed ahmed");
+        throw new Error("Failed to fetch data try another curr/metal");
       } else {
         const res = await data.json();
+
+        dispatch({ type: "loadingCg", payload: false });
+        dispatch({ type: "fetchData", payload: res });
       }
     } catch (error) {
-        console.log(error.name)
-    if(error.name==='TypeError'){
-        error.message = 'Connection error'
-        console.log('Connection error')
-    }
+     
+      if (error.name === "TypeError") {
+        error.message = "Connection error";
+        dispatch({ type: "fetchError", payload:  error.message });
+      }
+      dispatch({ type: "fetchError", payload:  error.message  });
+     
+     
+     
+      
+       
     }
   };
 }
@@ -84,4 +113,14 @@ export function getMetalValue(value) {
 
 export function getCurrencyValue(value) {
   return { type: "getchCurrencyValue", payload: value };
+}
+
+export function hideErrorAfterTime(){
+ 
+
+  return async function(dispatch){
+    setTimeout(()=>{
+      dispatch({ type: "deleteError"})
+     },2500)
+  }
 }

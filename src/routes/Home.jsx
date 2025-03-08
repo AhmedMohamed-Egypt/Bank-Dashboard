@@ -6,6 +6,8 @@ import FormMainCard from "../ui-components/FormMainCard"
 import { useState } from "react"
 import ExchangeRate from "../components/ExchangeRate"
 import { UseBalance } from "../context/BalanceContext"
+import Payment from "../components/Payment"
+import IncomeExpense from "../components/IncomeExpense"
 function Home() {
     const {id,account,status,balance,initialLoading,editLoading} = useSelector((store)=>store.mainCard)
     const {defaultCurrency} = UseBalance()
@@ -17,8 +19,9 @@ function Home() {
             {open&&<Overlay onClick={()=>setOpen(false)}>
                <FormMainCard setOpen={setOpen} onClick={()=>setOpen(false)} className={'cntrElement'}/>
             </Overlay>}
-            <div className="flex  ">
-                <div className="mainCard bg-lightviolet rounded-[10px] w-[620px] p-[20px] ">
+            <div className="flex  items-start">
+                   <div>
+                   <div className="mainCard bg-lightviolet rounded-[10px] w-[620px] p-[20px] ">
                  <div className="flex items-center justify-between mb-[20px]">
                     <p className="text-black font-pop font-semibold">Main Card</p>
                     <button onClick={()=>setOpen(true)} className="text-violet100 font-pop text-size-18">Change</button>
@@ -58,9 +61,16 @@ function Home() {
                       </div>
                     </div>
                  </div>
+           
                 </div>
+                   <IncomeExpense/>
+                   </div>
+           
                 <ExchangeRate/>
+                <Payment/>
+                
             </div>
+            
         </Layout>
     )
 }

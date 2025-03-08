@@ -5,11 +5,12 @@ import { getMetalValue } from '../redux/CuurencyGold';
 
 function SelectMetal() {
     const {metals} = useSelector((store)=>store.currencyMetal)
-    const [value,setValue] = useState(null)
+    const [value,setValue] = useState(null||JSON.parse(localStorage.getItem("metal")))
     const dispatchRedux = useDispatch();
     
   useEffect(()=>{
     dispatchRedux(getMetalValue(value))
+    localStorage.setItem("metal",JSON.stringify(value))
   },[value])
 
     const modifyData = metals.map((item)=>{

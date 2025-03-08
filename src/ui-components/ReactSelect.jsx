@@ -17,8 +17,8 @@ const customStyles = {
 function ReactSelect({options,onChange,defaultValue}) {
    
     return (
-        <Select styles={customStyles}
-          defaultValue={defaultValue} options={options} onChange={onChange} />
+        <Select styles={customStyles}  classNamePrefix="react-select" className="react-select-custom"
+        defaultValue  ={defaultValue} options={options} onChange={onChange} />
     )
 }
 

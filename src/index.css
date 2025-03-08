@@ -64,3 +64,11 @@
     @apply bg-background text-foreground;
   }
 }
+.paymentIocn{
+  @apply bg-[#F3F3FB] w-[75px] h-[75px] rounded-[10px] relative;
+}
+.centerElement{
+  @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+}
+
+

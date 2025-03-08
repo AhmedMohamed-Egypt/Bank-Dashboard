@@ -61,7 +61,8 @@ export default {
   			'size-12': '12px'
   		},
   		boxShadow: {
-  			shdaowHeader: '0px 0px 4px rgba(138, 138, 138, 0.5)'
+  			shdaowHeader: '0px 0px 4px rgba(138, 138, 138, 0.5)',
+			shadowIcon:'4px 4px 4px 1px rgba(0, 0, 0, 0.25)'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
