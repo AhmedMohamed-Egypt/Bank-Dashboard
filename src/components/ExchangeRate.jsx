@@ -16,7 +16,7 @@ function ExchangeRate(dataCurrency) {
   const dispatchRedux = useDispatch();
   const btns = ["Cash", "Non Cach", "Gold"];
 
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(0);
   const {
     currencyValue,
     metalValue,
@@ -41,7 +41,7 @@ function ExchangeRate(dataCurrency) {
   const { status, data } = resultData;
   //const {base_curency,}
   const valueSymbol = Object.values(data?.rates || {});
- 
+  
   return (
     <div className="bg-lightviolet rounded-[15px] p-[20px] xyz-exchangeRate w-[380px] mx-[30px]">
       <h2 className="font-pop font-semibold">Exchange Rate</h2>
@@ -76,7 +76,7 @@ function ExchangeRate(dataCurrency) {
                 className="button bg-black rounded-[6px] px-[15px] py-[7px] text-white mt-[15px]"
                 onClick={() => handleConvert()}
               >
-                {(error != null)
+                {(errormetalCurrency != null)
                   ? "Try Again"
                   : loadingCG
                   ? "Converting"
@@ -87,13 +87,13 @@ function ExchangeRate(dataCurrency) {
               }
               <p
                 className={`bg-red-400 text-grey-500 rounded-md mt-5 font-semibold ${
-                 ( error != null  ) && "p-1 pl-[15px]"
+                 ( errormetalCurrency != null  ) && "p-1 pl-[15px]"
                 }`}
               >
-                {(error != null ) ? errormetalCurrency : ""}
+                {(errormetalCurrency != null ) ? errormetalCurrency : ""}
               </p>
               <div>
-                {error==null && status === "success"   ? (
+                {errormetalCurrency==null && status === "success"   ? (
                   <>
                     <p className="bg-black text-white p-[10px] rounded-md">
                       {`1 ${data.symbols} = ${valueSymbol} ${data.base_currency}`}

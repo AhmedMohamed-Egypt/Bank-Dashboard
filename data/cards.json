@@ -1,17 +1,33 @@
 {
   "cards": [
     {
-      "account": "",
-      "status": "",
-      "balance": "",
+      "account": "Primary",
+      "status": "Active",
+      "balance": "3600",
       "id": "23456"
     }
   ],
   "metals": [
-    { "symbol": "XAG", "name": "Silver" },
-    { "symbol": "XAU", "name": "GOLD" },
-    { "symbol": "XRH", "name": "Rhodium" },
-    { "symbol": "ALU", "name": "Aluminum" }
+    {
+      "symbol": "XAG",
+      "name": "Silver",
+      "id": "fb30"
+    },
+    {
+      "symbol": "XAU",
+      "name": "GOLD",
+      "id": "aef3"
+    },
+    {
+      "symbol": "XRH",
+      "name": "Rhodium",
+      "id": "830c"
+    },
+    {
+      "symbol": "ALU",
+      "name": "Aluminum",
+      "id": "d609"
+    }
   ],
   "currencies": [
     {
@@ -20,7 +36,8 @@
       "alphabeticcode": "USD",
       "numericcode": "840",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "89b4"
     },
     {
       "entity": "CANADA",
@@ -28,7 +45,8 @@
       "alphabeticcode": "CAD",
       "numericcode": "124",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "6616"
     },
     {
       "entity": "NORFOLK ISLAND",
@@ -36,7 +54,8 @@
       "alphabeticcode": "AUD",
       "numericcode": "036",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "b254"
     },
     {
       "entity": "LITHUANIA",
@@ -44,7 +63,8 @@
       "alphabeticcode": "LTL",
       "numericcode": "440",
       "minorunit": null,
-      "withdrawaldate": "2014-12"
+      "withdrawaldate": "2014-12",
+      "id": "e965"
     },
     {
       "entity": "MALTA",
@@ -52,7 +72,8 @@
       "alphabeticcode": "MTP",
       "numericcode": "470",
       "minorunit": null,
-      "withdrawaldate": "1983-06"
+      "withdrawaldate": "1983-06",
+      "id": "9d55"
     },
     {
       "entity": "TURKMENISTAN",
@@ -60,7 +81,8 @@
       "alphabeticcode": "RUR",
       "numericcode": "810",
       "minorunit": null,
-      "withdrawaldate": "1993-10"
+      "withdrawaldate": "1993-10",
+      "id": "fef7"
     },
     {
       "entity": "URUGUAY",
@@ -68,7 +90,8 @@
       "alphabeticcode": "UYN",
       "numericcode": "858",
       "minorunit": null,
-      "withdrawaldate": "1989-12"
+      "withdrawaldate": "1989-12",
+      "id": "9e39"
     },
     {
       "entity": "BELIZE",
@@ -76,7 +99,8 @@
       "alphabeticcode": "BZD",
       "numericcode": "084",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "ef3e"
     },
     {
       "entity": "CYPRUS",
@@ -84,7 +108,8 @@
       "alphabeticcode": "EUR",
       "numericcode": "978",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "b40b"
     },
     {
       "entity": "FALKLAND ISLANDS (THE) [MALVINAS]",
@@ -92,7 +117,8 @@
       "alphabeticcode": "FKP",
       "numericcode": "238",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "419f"
     },
     {
       "entity": "MEXICO",
@@ -100,7 +126,8 @@
       "alphabeticcode": "MXV",
       "numericcode": "979",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "3fa4"
     },
     {
       "entity": "PALESTINE, STATE OF",
@@ -108,7 +135,8 @@
       "alphabeticcode": null,
       "numericcode": null,
       "minorunit": null,
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "d306"
     },
     {
       "entity": "SOLOMON ISLANDS",
@@ -116,7 +144,8 @@
       "alphabeticcode": "SBD",
       "numericcode": "090",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "ddb9"
     },
     {
       "entity": "SWITZERLAND",
@@ -124,7 +153,8 @@
       "alphabeticcode": "CHW",
       "numericcode": "948",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "47b6"
     },
     {
       "entity": "TAIWAN (PROVINCE OF CHINA)",
@@ -132,7 +162,8 @@
       "alphabeticcode": "TWD",
       "numericcode": "901",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "1902"
     },
     {
       "entity": "TRINIDAD AND TOBAGO",
@@ -140,7 +171,8 @@
       "alphabeticcode": "TTD",
       "numericcode": "780",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "d732"
     },
     {
       "entity": "URUGUAY",
@@ -148,7 +180,8 @@
       "alphabeticcode": "UYU",
       "numericcode": "858",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "b860"
     },
     {
       "entity": "ANDORRA",
@@ -156,7 +189,8 @@
       "alphabeticcode": "ESP",
       "numericcode": "724",
       "minorunit": null,
-      "withdrawaldate": "2002-03"
+      "withdrawaldate": "2002-03",
+      "id": "d303"
     },
     {
       "entity": "BELGIUM",
@@ -164,7 +198,8 @@
       "alphabeticcode": "BEC",
       "numericcode": "993",
       "minorunit": null,
-      "withdrawaldate": "1990-03"
+      "withdrawaldate": "1990-03",
+      "id": "98f3"
     },
     {
       "entity": "BELGIUM",
@@ -172,7 +207,8 @@
       "alphabeticcode": "BEL",
       "numericcode": "992",
       "minorunit": null,
-      "withdrawaldate": "1990-03"
+      "withdrawaldate": "1990-03",
+      "id": "a902"
     },
     {
       "entity": "GEORGIA",
@@ -180,7 +216,8 @@
       "alphabeticcode": "RUR",
       "numericcode": "810",
       "minorunit": null,
-      "withdrawaldate": "1994-04"
+      "withdrawaldate": "1994-04",
+      "id": "0c14"
     },
     {
       "entity": "GREECE",
@@ -188,7 +225,8 @@
       "alphabeticcode": "GRD",
       "numericcode": "300",
       "minorunit": null,
-      "withdrawaldate": "2002-03"
+      "withdrawaldate": "2002-03",
+      "id": "4688"
     },
     {
       "entity": "PERU",
@@ -196,7 +234,8 @@
       "alphabeticcode": "PEN",
       "numericcode": "604",
       "minorunit": null,
-      "withdrawaldate": "2015-12"
+      "withdrawaldate": "2015-12",
+      "id": "b1fb"
     },
     {
       "entity": "TIMOR-LESTE",
@@ -204,7 +243,8 @@
       "alphabeticcode": "IDR",
       "numericcode": "360",
       "minorunit": null,
-      "withdrawaldate": "2002-07"
+      "withdrawaldate": "2002-07",
+      "id": "a1e8"
     },
     {
       "entity": "ZAIRE",
@@ -212,7 +252,8 @@
       "alphabeticcode": "ZRZ",
       "numericcode": "180",
       "minorunit": null,
-      "withdrawaldate": "1994-02"
+      "withdrawaldate": "1994-02",
+      "id": "813a"
     },
     {
       "entity": "BENIN",
@@ -220,7 +261,8 @@
       "alphabeticcode": "XOF",
       "numericcode": "952",
       "minorunit": "0",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "4bbd"
     },
     {
       "entity": "CABO VERDE",
@@ -228,7 +270,8 @@
       "alphabeticcode": "CVE",
       "numericcode": "132",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "f98f"
     },
     {
       "entity": "CENTRAL AFRICAN REPUBLIC (THE)",
@@ -236,7 +279,8 @@
       "alphabeticcode": "XAF",
       "numericcode": "950",
       "minorunit": "0",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "8efb"
     },
     {
       "entity": "CHILE",
@@ -244,7 +288,8 @@
       "alphabeticcode": "CLP",
       "numericcode": "152",
       "minorunit": "0",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "b5f6"
     },
     {
       "entity": "CONGO (THE DEMOCRATIC REPUBLIC OF THE)",
@@ -252,7 +297,8 @@
       "alphabeticcode": "CDF",
       "numericcode": "976",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "85b2"
     },
     {
       "entity": "CONGO (THE)",
@@ -260,7 +306,8 @@
       "alphabeticcode": "XAF",
       "numericcode": "950",
       "minorunit": "0",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "4b9c"
     },
     {
       "entity": "CUBA",
@@ -268,7 +315,8 @@
       "alphabeticcode": "CUC",
       "numericcode": "931",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "6028"
     },
     {
       "entity": "SWITZERLAND",
@@ -276,7 +324,8 @@
       "alphabeticcode": "CHE",
       "numericcode": "947",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "ecc6"
     },
     {
       "entity": "ZZ04_Bond Markets Unit European_EUA-17",
@@ -284,7 +333,8 @@
       "alphabeticcode": "XBD",
       "numericcode": "958",
       "minorunit": "-",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "19b4"
     },
     {
       "entity": "ALBANIA",
@@ -292,7 +342,8 @@
       "alphabeticcode": "ALK",
       "numericcode": "008",
       "minorunit": null,
-      "withdrawaldate": "1989-12"
+      "withdrawaldate": "1989-12",
+      "id": "a0b1"
     },
     {
       "entity": "BULGARIA",
@@ -300,7 +351,8 @@
       "alphabeticcode": "BGK",
       "numericcode": "100",
       "minorunit": null,
-      "withdrawaldate": "1989 to 1990"
+      "withdrawaldate": "1989 to 1990",
+      "id": "0f6b"
     },
     {
       "entity": "ESTONIA",
@@ -308,7 +360,8 @@
       "alphabeticcode": "EEK",
       "numericcode": "233",
       "minorunit": null,
-      "withdrawaldate": "2011-01"
+      "withdrawaldate": "2011-01",
+      "id": "3dba"
     },
     {
       "entity": "GEORGIA",
@@ -316,7 +369,8 @@
       "alphabeticcode": "GEK",
       "numericcode": "268",
       "minorunit": null,
-      "withdrawaldate": "1995-10"
+      "withdrawaldate": "1995-10",
+      "id": "b785"
     },
     {
       "entity": "LATVIA",
@@ -324,7 +378,8 @@
       "alphabeticcode": "LVR",
       "numericcode": "428",
       "minorunit": null,
-      "withdrawaldate": "1994-12"
+      "withdrawaldate": "1994-12",
+      "id": "fa5b"
     },
     {
       "entity": "TURKEY",
@@ -332,7 +387,8 @@
       "alphabeticcode": "TRL",
       "numericcode": "792",
       "minorunit": null,
-      "withdrawaldate": "2005-12"
+      "withdrawaldate": "2005-12",
+      "id": "ff46"
     },
     {
       "entity": "BAHRAIN",
@@ -340,7 +396,8 @@
       "alphabeticcode": "BHD",
       "numericcode": "048",
       "minorunit": "3",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "6cc5"
     },
     {
       "entity": "CHILE",
@@ -348,7 +405,8 @@
       "alphabeticcode": "CLF",
       "numericcode": "990",
       "minorunit": "4",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "26a1"
     },
     {
       "entity": "ERITREA",
@@ -356,7 +414,8 @@
       "alphabeticcode": "ERN",
       "numericcode": "232",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "ef13"
     },
     {
       "entity": "FINLAND",
@@ -364,7 +423,8 @@
       "alphabeticcode": "EUR",
       "numericcode": "978",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "fbdb"
     },
     {
       "entity": "GUYANA",
@@ -372,7 +432,8 @@
       "alphabeticcode": "GYD",
       "numericcode": "328",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "1f77"
     },
     {
       "entity": "MALTA",
@@ -380,7 +441,8 @@
       "alphabeticcode": "EUR",
       "numericcode": "978",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "b7f4"
     },
     {
       "entity": "NORFOLK ISLAND",
@@ -388,7 +450,8 @@
       "alphabeticcode": "AUD",
       "numericcode": "036",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "a0e5"
     },
     {
       "entity": "NORWAY",
@@ -396,63 +459,29 @@
       "alphabeticcode": "NOK",
       "numericcode": "578",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "37ee"
     },
-    {
-      "entity": "PANAMA",
-      "currency": "Balboa",
-      "alphabeticcode": "PAB",
-      "numericcode": "590",
-      "minorunit": "2",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "SENEGAL",
-      "currency": "CFA Franc BCEAO",
-      "alphabeticcode": "XOF",
-      "numericcode": "952",
-      "minorunit": "0",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "ZZ06_Testing_Code",
-      "currency": "Codes specifically reserved for testing purposes",
-      "alphabeticcode": "XTS",
-      "numericcode": "963",
-      "minorunit": "-",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "ARGENTINA",
-      "currency": "Peso Argentino",
-      "alphabeticcode": "ARP",
-      "numericcode": "032",
-      "minorunit": null,
-      "withdrawaldate": "1985-07"
-    },
+   
+    
     {
       "entity": "LITHUANIA",
       "currency": "Talonas",
       "alphabeticcode": "LTT",
       "numericcode": "440",
       "minorunit": null,
-      "withdrawaldate": "1993-07"
+      "withdrawaldate": "1993-07",
+      "id": "6d7b"
     },
-    {
-      "entity": "MOZAMBIQUE",
-      "currency": "Mozambique Metical",
-      "alphabeticcode": "MZM",
-      "numericcode": "508",
-      "minorunit": null,
-      "withdrawaldate": "2006-06"
-    },
+ 
     {
       "entity": "PORTUGAL",
       "currency": "Portuguese Escudo",
       "alphabeticcode": "PTE",
       "numericcode": "620",
       "minorunit": null,
-      "withdrawaldate": "2002-03"
+      "withdrawaldate": "2002-03",
+      "id": "ec69"
     },
     {
       "entity": "SERBIA AND MONTENEGRO",
@@ -460,7 +489,8 @@
       "alphabeticcode": "CSD",
       "numericcode": "891",
       "minorunit": null,
-      "withdrawaldate": "2006-10"
+      "withdrawaldate": "2006-10",
+      "id": "ab84"
     },
     {
       "entity": "SIERRA LEONE",
@@ -468,7 +498,8 @@
       "alphabeticcode": "SLL",
       "numericcode": "694",
       "minorunit": null,
-      "withdrawaldate": "2023-12"
+      "withdrawaldate": "2023-12",
+      "id": "360a"
     },
     {
       "entity": "ZAMBIA",
@@ -476,7 +507,8 @@
       "alphabeticcode": "ZMK",
       "numericcode": "894",
       "minorunit": null,
-      "withdrawaldate": "2012-12"
+      "withdrawaldate": "2012-12",
+      "id": "46f1"
     },
     {
       "entity": "SINT MAARTEN (DUTCH PART)",
@@ -484,7 +516,8 @@
       "alphabeticcode": "ANG",
       "numericcode": "532",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "c23d"
     },
     {
       "entity": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS",
@@ -492,7 +525,8 @@
       "alphabeticcode": null,
       "numericcode": null,
       "minorunit": null,
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "5190"
     },
     {
       "entity": "TOKELAU",
@@ -500,7 +534,8 @@
       "alphabeticcode": "NZD",
       "numericcode": "554",
       "minorunit": "2",
-      "withdrawaldate": null
+      "withdrawaldate": null,
+      "id": "65f2"
     },
     {
       "entity": "BURMA",
@@ -508,7 +543,8 @@
       "alphabeticcode": "BUK",
       "numericcode": "104",
       "minorunit": null,
-      "withdrawaldate": "1990-02"
+      "withdrawaldate": "1990-02",
+      "id": "1545"
     },
     {
       "entity": "FRANCE",
@@ -516,7 +552,8 @@
       "alphabeticcode": "FRF",
       "numericcode": "250",
       "minorunit": null,
-      "withdrawaldate": "2002-03"
+      "withdrawaldate": "2002-03",
+      "id": "caa2"
     },
     {
       "entity": "MEXICO",
@@ -524,95 +561,24 @@
       "alphabeticcode": "MXP",
       "numericcode": "484",
       "minorunit": null,
-      "withdrawaldate": "1993-01"
-    },
-    {
-      "entity": "NETHERLANDS",
-      "currency": "Netherlands Guilder",
-      "alphabeticcode": "NLG",
-      "numericcode": "528",
-      "minorunit": null,
-      "withdrawaldate": "2002-03"
-    },
-    {
-      "entity": "UGANDA",
-      "currency": "Old Shilling",
-      "alphabeticcode": "UGW",
-      "numericcode": "800",
-      "minorunit": null,
-      "withdrawaldate": "1989 to 1990"
-    },
-    {
-      "entity": "YUGOSLAVIA",
-      "currency": "Yugoslavian Dinar",
-      "alphabeticcode": "YUN",
-      "numericcode": "890",
-      "minorunit": null,
-      "withdrawaldate": "1995-11"
-    },
-    {
-      "entity": "ARMENIA",
-      "currency": "Armenian Dram",
-      "alphabeticcode": "AMD",
-      "numericcode": "051",
-      "minorunit": "2",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "SLOVAKIA",
-      "currency": "Euro",
-      "alphabeticcode": "EUR",
-      "numericcode": "978",
-      "minorunit": "2",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "SWEDEN",
-      "currency": "Swedish Krona",
-      "alphabeticcode": "SEK",
-      "numericcode": "752",
-      "minorunit": "2",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "TUVALU",
-      "currency": "Australian Dollar",
-      "alphabeticcode": "AUD",
-      "numericcode": "036",
-      "minorunit": "2",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "ZZ09_Palladium",
-      "currency": "Palladium",
-      "alphabeticcode": "XPD",
-      "numericcode": "964",
-      "minorunit": "-",
-      "withdrawaldate": null
-    },
-    {
-      "entity": "BRAZIL",
-      "currency": "Cruzeiro",
-      "alphabeticcode": "BRE",
-      "numericcode": "076",
-      "minorunit": null,
-      "withdrawaldate": "1993-03"
-    },
-    {
-      "entity": "ECUADOR",
-      "currency": "Unidad de Valor Constante (UVC)",
-      "alphabeticcode": "ECV",
-      "numericcode": "983",
-      "minorunit": null,
-      "withdrawaldate": "2000-09"
-    },
-    {
-      "entity": "R\u00c9UNION",
-      "currency": "French Franc",
-      "alphabeticcode": "FRF",
-      "numericcode": "250",
-      "minorunit": null,
-      "withdrawaldate": "2002-03"
+      "withdrawaldate": "1993-01",
+      "id": "08ef"
     }
-  ]
+  ],
+  "income":{
+    "yearly":{
+      "salary":60000,
+      "expenses":42000
+       
+    },
+    "monthly":{
+      "salary":5800,
+      "expenses":2300
+    },
+    "weekly":{
+      "salary":1450,
+      "expenses":320
+    }
+  }
+  
 }

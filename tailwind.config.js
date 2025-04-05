@@ -8,6 +8,7 @@ export default {
   			'grey': '#F0F0FACC',
   			'grey100': '#999999CC',
   			'grey200': '#999999',
+			'grey300':'#5C5C5C',
   			'grey900': '#4B4B4B',
   			'white69': '#ffffffb0',
   			'lightviolet': '#F3F3FB',
