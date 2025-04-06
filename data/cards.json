@@ -579,6 +579,13 @@
       "salary":1450,
       "expenses":320
     }
-  }
+  },
+  "tableOperations":[
+    {"name":"Netflix","Time":1570194600000,"Currency":"USD","status":1,"cashback":100,"amount":"500"},
+    {"name":"Uber","Time":1560194600000,"Currency":"USD","status":1,"cashback":120,"amount":"500"},
+    {"name":"Ikea","Time":1560194647000,"Currency":"USD","status":1,"cashback":180,"amount":"650"},
+    {"name":"Ikea","Time":1564794647470,"Currency":"USD","status":0,"cashback":0,"amount":"450"},
+    {"name":"KFC","Time":1460153100000,"Currency":"USD","status":1,"cashback":370,"amount":"950"}
+  ]
   
 }

@@ -2,6 +2,7 @@ import BasicTable from "./../ui-components/BasicTable";
 import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 import TableBody from "@mui/material/TableBody";
+import TableHead from '@mui/material/TableHead';
 import { useSelector } from "react-redux";
 
 function Cash() {
@@ -57,6 +58,14 @@ function Cash() {
             classThead={"thead-exchnage"}
             classTable={"table-exchange"}
           >
+            <TableHead className={'thead-exchnage'}>
+          <TableRow>
+            <TableCell></TableCell>
+            <TableCell align="left">Puchase</TableCell>
+            <TableCell align="left">Sell</TableCell>
+            <TableCell align="left">Cb</TableCell>
+          </TableRow>
+        </TableHead>
             <TableBody>
               {rows.map((row) => (
                 <TableRow

@@ -20,7 +20,6 @@ function App() {
     <Route path="/loans" element={<Loans/>}/>
     <Route path="/contacts" element={<Contacts/>}/>
     <Route path="/setting" element={<Setting/>}/>
-
    </Routes>
    </BrowserRouter>
     </BalanceContxtProvider>

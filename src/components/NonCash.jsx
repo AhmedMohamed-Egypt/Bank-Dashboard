@@ -3,6 +3,7 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 import TableBody from "@mui/material/TableBody";
 import { useSelector } from "react-redux";
+import TableHead from '@mui/material/TableHead';
 
 function NonCash() {
   const { ratescurrency, loadCurrnecy, errorLoad } = useSelector(
@@ -54,9 +55,17 @@ function NonCash() {
       ) : (
         <>
           <BasicTable
-            classThead={"thead-exchnage"}
+           
             classTable={"table-exchange"}
           >
+                <TableHead className={'thead-exchnage'}>
+                      <TableRow>
+                        <TableCell></TableCell>
+                        <TableCell align="left">Puchase</TableCell>
+                        <TableCell align="left">Sell</TableCell>
+                        <TableCell align="left">Cb</TableCell>
+                      </TableRow>
+                    </TableHead>
             <TableBody>
               {rows.map((row) => (
                 <TableRow

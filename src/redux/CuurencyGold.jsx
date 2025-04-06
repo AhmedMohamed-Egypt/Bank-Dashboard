@@ -74,8 +74,8 @@ export function fetchGold(curr, metal) {
       }
     } catch (error) {
      
-      if (error.name === "TypeError") {
-        error.message = "Connection error";
+       if (error.name === "TypeError") {
+       error.message = "Connection error";
         dispatch({ type: "fetchError", payload:  error.message });
       }
       dispatch({ type: "fetchError", payload:  error.message  });
