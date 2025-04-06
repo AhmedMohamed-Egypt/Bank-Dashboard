@@ -8,8 +8,8 @@ import ExchangeRate from "../components/ExchangeRate"
 import { UseBalance } from "../context/BalanceContext"
 import Payment from "../components/Payment"
 import IncomeExpense from "../components/IncomeExpense"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import TableOperations from "../components/TableOperations"
+import Chats from "../components/Chats"
 
 function Home() {
     const {id,account,status,balance,initialLoading,editLoading} = useSelector((store)=>store.mainCard)
@@ -98,8 +98,9 @@ function Home() {
                 </div>
                 
             </div>
-          <div>
+          <div className="flex items-start">
             <TableOperations/>
+            <Chats/>
           </div>
 
         </Layout>

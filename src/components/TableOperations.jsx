@@ -22,11 +22,11 @@ function TableOperations() {
   }
 
   return (
-    <div>
+    <div className="flex-1">
       {errorOperationData != null || loadOperationData ? (
         <p>{errorOperationData || "loading"}</p>
       ) : (
-        <div className="mt-[25px] ">
+        <div>
             <div>
                 <h2 className="text-size-20 font-semibold mb-2 font-pop">Account Operations</h2>
             </div>
