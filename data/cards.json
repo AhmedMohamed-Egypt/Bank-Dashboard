@@ -1,9 +1,9 @@
 {
   "cards": [
     {
-      "account": "Primary",
-      "status": "Active",
-      "balance": "3600",
+      "account": "Gold",
+      "status": "in-Active",
+      "balance": "2450",
       "id": "23456"
     }
   ],
@@ -462,8 +462,6 @@
       "withdrawaldate": null,
       "id": "37ee"
     },
-   
-    
     {
       "entity": "LITHUANIA",
       "currency": "Talonas",
@@ -473,7 +471,6 @@
       "withdrawaldate": "1993-07",
       "id": "6d7b"
     },
- 
     {
       "entity": "PORTUGAL",
       "currency": "Portuguese Escudo",
@@ -565,27 +562,99 @@
       "id": "08ef"
     }
   ],
-  "income":{
-    "yearly":{
-      "salary":60000,
-      "expenses":42000
-       
+  "income": {
+    "yearly": {
+      "salary": 60000,
+      "expenses": 42000
     },
-    "monthly":{
-      "salary":5800,
-      "expenses":2300
+    "monthly": {
+      "salary": 5800,
+      "expenses": 2300
     },
-    "weekly":{
-      "salary":1450,
-      "expenses":320
+    "weekly": {
+      "salary": 1450,
+      "expenses": 320
     }
   },
-  "tableOperations":[
-    {"name":"Netflix","Time":1570194600000,"Currency":"USD","status":1,"cashback":100,"amount":"500"},
-    {"name":"Uber","Time":1560194600000,"Currency":"USD","status":1,"cashback":120,"amount":"500"},
-    {"name":"Ikea","Time":1560194647000,"Currency":"USD","status":1,"cashback":180,"amount":"650"},
-    {"name":"Ikea","Time":1564794647470,"Currency":"USD","status":0,"cashback":0,"amount":"450"},
-    {"name":"KFC","Time":1460153100000,"Currency":"USD","status":1,"cashback":370,"amount":"950"}
+  "tableOperations": [
+    {
+      "name": "Netflix",
+      "Time": 1570194600000,
+      "Currency": "USD",
+      "status": 1,
+      "cashback": 100,
+      "amount": "500",
+      "id": "751f"
+    },
+    {
+      "name": "Uber",
+      "Time": 1560194600000,
+      "Currency": "USD",
+      "status": 1,
+      "cashback": 120,
+      "amount": "500",
+      "id": "b0d1"
+    },
+    {
+      "name": "Ikea",
+      "Time": 1560194647000,
+      "Currency": "USD",
+      "status": 1,
+      "cashback": 180,
+      "amount": "650",
+      "id": "4870"
+    },
+    {
+      "name": "Ikea",
+      "Time": 1564794647470,
+      "Currency": "USD",
+      "status": 0,
+      "cashback": 0,
+      "amount": "450",
+      "id": "e9fe"
+    },
+    {
+      "name": "KFC",
+      "Time": 1460153100000,
+      "Currency": "USD",
+      "status": 1,
+      "cashback": 370,
+      "amount": "950",
+      "id": "c1e4"
+    }
+  ],
+  "creditsCards": [
+    {
+      "id": "1",
+      "cardType": "Gold",
+      "cardAccount": "1425 4125 4125 4112",
+      "cardCurrency": "USD",
+      "accountBalance": "145",
+      "theme": "Gold"
+    },
+    {
+      "id": "2",
+      "cardType": "Platinum",
+      "cardAccount": "2514 4125 1122 5541",
+      "cardCurrency": "CAD",
+      "accountBalance": "365",
+      "theme": "Platinum"
+    },
+    {
+      "id": "3",
+      "cardType": "Local",
+      "cardAccount": "1425 4125 4413 6521",
+      "cardCurrency": "EUR",
+      "accountBalance": "95",
+      "theme": "Local"
+    },
+    {
+      "id": "4",
+      "cardType": "Gold Card",
+      "cardAccount": 987421678123456800,
+      "cardCurrency": "AUS",
+      "accountBalance": 2154,
+      "theme": "International"
+    }
   ]
-  
 }

@@ -8,9 +8,9 @@ function Sidebar() {
             <FontAwesomeIcon icon={faGrip}/>
              <span>Home</span>
             </NavLink>
-            <NavLink to="/credit">
+            <NavLink to="/Cards">
             <FontAwesomeIcon icon={faCreditCard}/>
-            <span>Credit</span>
+            <span>Cards</span>
             </NavLink>
 
             <NavLink to="/transfer">

@@ -65,6 +65,7 @@ export default {
       boxShadow: {
         shdaowHeader: "0px 0px 4px rgba(138, 138, 138, 0.5)",
         shadowIcon: "4px 4px 4px 1px rgba(0, 0, 0, 0.25)",
+        pinkShdow:"10px 10px 44px 12px rgba(182, 89, 252, 0.3);"
       },
       borderRadius: {
         lg: "var(--radius)",
